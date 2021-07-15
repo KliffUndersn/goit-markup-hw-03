@@ -50,7 +50,9 @@ img {
 .link:focus {
   color: var(--color-blue);
 }
-
+.border {
+  border-bottom: 1px solid #ececec;
+}
 /*  header */
 
 .nav,
