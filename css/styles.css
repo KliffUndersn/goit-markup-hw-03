@@ -18,14 +18,7 @@ ol {
   margin-top: 0;
   padding: 0;
 }
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-}
+
 body {
   background-color: var(--color-white);
   color: var(--color-grey);
@@ -38,13 +31,22 @@ body {
 img {
   display: block;
 }
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
 .list {
   list-style: none;
 }
-.section {
+.pad-top {
   padding-top: 94px;
-  margin-left: auto;
-  margin-right: auto;
+}
+.end {
+  margin-bottom: 94px;
 }
 .link:hover,
 .link:focus {
@@ -97,7 +99,7 @@ header > .container,
   text-decoration: none;
   color: var(--color-black);
 }
-.nav-item > .active {
+.active {
   color: var(--color-blue);
 }
 .contact-list {
@@ -166,6 +168,7 @@ header > .container,
   flex-direction: row;
   flex-basis: calc((100% - 120px) / 4);
   margin-left: -30px;
+  padding-bottom: 47px;
   /* justify-content: space-between; */
 }
 .about-list li {
@@ -192,7 +195,7 @@ header > .container,
   color: var(--color-black);
   text-align: center;
   font-size: 36px;
-  padding-top: 94px;
+  padding-top: 47px;
   margin-bottom: 50px;
 }
 .work-list {
@@ -355,12 +358,13 @@ header > .container,
 .galery-title {
   margin-bottom: 4px;
 }
-.end {
-  margin-bottom: 94px;
-}
+
 .gallery-card {
   padding: 20px 24px;
 }
 .logo-mar {
   margin-bottom: 20px;
+}
+.contacts-mar {
+  margin-bottom: 9px;
 }
