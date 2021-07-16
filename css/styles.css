@@ -37,22 +37,21 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  align-items: center;
+  /* align-items: center; */
 }
 .list {
   list-style: none;
 }
 .pad-top {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
-.end {
-  margin-bottom: 94px;
-}
+
 .link:hover,
 .link:focus {
   color: var(--color-blue);
 }
-.border {
+.head-border {
   border-bottom: 1px solid #ececec;
 }
 /*  header */
@@ -62,6 +61,7 @@ header > .container,
 .selectors,
 .img-list {
   display: flex;
+  align-items: center;
 }
 .nav-link {
   padding-top: 25px;
@@ -169,11 +169,16 @@ header > .container,
   flex-direction: row;
   flex-basis: calc((100% - 120px) / 4);
   margin-left: -30px;
+}
+.discription {
+  padding-top: 94px;
   padding-bottom: 47px;
-  /* justify-content: space-between; */
 }
 .about-list li {
   margin-left: 30px;
+}
+.border-small {
+  padding: 5px;
 }
 .about-title {
   text-transform: uppercase;
@@ -254,14 +259,20 @@ header > .container,
 
 .footer-logo {
   color: var(--color-white);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: block;
 }
-.footer {
+.footer-color {
   background-color: #2f303a;
 }
 
 .footer-item {
-  width: 1200px;
-  margin: auto;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -310,10 +321,8 @@ header > .container,
 }
 /* portfolio */
 .selectors {
-  display: flex;
-  align-items: center;
-  margin: auto;
   justify-content: center;
+  margin-bottom: 35px;
 }
 .selectors > .list:not(:last-child) {
   margin-right: 8px;
@@ -336,15 +345,15 @@ header > .container,
 .tile-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 35px;
   margin-left: -30px;
-  margin-bottom: -30px;
+  margin-top: -30px;
 }
+
 .title-li {
   display: block;
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
-  margin-bottom: 30px;
+  margin-top: 30px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
@@ -357,9 +366,6 @@ header > .container,
 
 .gallery-card {
   padding: 20px 24px;
-}
-.logo-mar {
-  margin-bottom: 20px;
 }
 .contacts-mar {
   margin-bottom: 9px;
